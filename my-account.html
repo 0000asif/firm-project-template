@@ -47,36 +47,36 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 
     <style>
-        
-      .profile-card {
-         background-color: #fff;
-         border-radius: 10px;
-         padding: 20px;
-         text-align: center;
-         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-         margin-bottom: 20px;
-      }
+        .profile-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
 
-      .profile-card img {
-         width: 100px;
-         height: 100px;
-         border-radius: 50%;
-         /* Circular profile picture */
-         object-fit: cover;
-         margin-bottom: 10px;
-      }
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /* Circular profile picture */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
 
-      .profile-name {
-         font-size: 1.5rem;
-         font-weight: bold;
-         color: #333;
-      }
+        .profile-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
 
-      .profile-email {
-         font-size: 1rem;
-         color: #777;
-         margin-bottom: 10px;
-      }
+        .profile-email {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
         .info-card {
             border-radius: 10px;
             color: #fff;
@@ -129,7 +129,15 @@
             color: #fff;
             padding: 10px;
             border-radius: 5px;
+            display: block;
+            /* Ensure it behaves as a block element */
+            width: 100%;
+            /* Force it to take up the full width */
+            box-sizing: border-box;
+            /* Include padding in the width calculation */
         }
+
+
 
         .bg-secondary {
             background-color: #6c757d !important;
@@ -330,7 +338,7 @@
                                         </div>
                                         <!-- Basic Information -->
                                         <div class="col-md-12">
-                                            
+
                                             <div class="profile-section">
                                                 <div class="section-title">Basic Information</div>
                                                 <p><strong>Name:</strong> Md Abdullah Shake</p>
