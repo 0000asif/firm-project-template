@@ -47,6 +47,94 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 
     <style>
+        
+      .profile-card {
+         background-color: #fff;
+         border-radius: 10px;
+         padding: 20px;
+         text-align: center;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         margin-bottom: 20px;
+      }
+
+      .profile-card img {
+         width: 100px;
+         height: 100px;
+         border-radius: 50%;
+         /* Circular profile picture */
+         object-fit: cover;
+         margin-bottom: 10px;
+      }
+
+      .profile-name {
+         font-size: 1.5rem;
+         font-weight: bold;
+         color: #333;
+      }
+
+      .profile-email {
+         font-size: 1rem;
+         color: #777;
+         margin-bottom: 10px;
+      }
+        .info-card {
+            border-radius: 10px;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            font-size: 1.2rem;
+        }
+
+        .bg-balance {
+            background-color: #dc3545;
+        }
+
+        .bg-withdraw {
+            background-color: #198754;
+        }
+
+        .bg-investment {
+            background-color: #17a2b8;
+        }
+
+        .bg-projects {
+            background-color: #ffc107;
+        }
+
+        .profile-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            /* Visible border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle box shadow */
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .bg-secondary {
+            background-color: #6c757d !important;
+        }
+
         .overview {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -78,7 +166,7 @@
             gap: 20px;
         }
 
-        .widget {
+        .widgete {
             background-color: #ecf0f1;
             padding: 20px;
             border-radius: 8px;
@@ -173,15 +261,22 @@
                                             class="ti-layout-grid2"></i>Dashboard</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" id="orders-tab" data-bs-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="orders" aria-selected="false"><i class="ti-user"
+                                            style="font-size: 24px; "></i>
+                                        Profile</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" id="orders-tab" data-bs-toggle="tab" href="#orders" role="tab"
                                         aria-controls="orders" aria-selected="false"><i
                                             class="ti-shopping-cart-full"></i>Projects</a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" id="address-tab" data-bs-toggle="tab" href="#address" role="tab"
                                         aria-controls="address" aria-selected="true"><i
                                             class="ti-location-pin"></i>Change Password</a>
-                                </li>
+                                </li> -->
+
                                 <li class="nav-item">
                                     <a class="nav-link" id="account-detail-tab" data-bs-toggle="tab"
                                         href="#account-detail" role="tab" aria-controls="account-detail"
@@ -197,29 +292,75 @@
                         <div class="tab-content dashboard_content">
                             <div class="tab-pane fade active show" id="dashboard" role="tabpanel"
                                 aria-labelledby="dashboard-tab">
-                                <div class="card">
-                                    <section class="overview">
-                                        <div class="box">
-                                            <h3>Earnings</h3>
-                                            <p>Lifetime: $0</p>
-                                            <p>This Month: $0</p>
+
+                                <section class="overview">
+                                    <div class="box">
+                                        <h3>Earnings</h3>
+                                        <p>Lifetime: $0</p>
+                                        <p>This Month: $0</p>
+                                    </div>
+                                    <div class="box">
+                                        <h3>Ongoing Workstreams</h3>
+                                        <p>Total: 0</p>
+                                        <p>Deadline: 7 Days</p>
+                                    </div>
+                                    <div class="box">
+                                        <h3>Projects Applied</h3>
+                                        <p>This Month: 0</p>
+                                        <p>Last 7 Days: 0</p>
+                                    </div>
+                                    <div class="box">
+                                        <h3>Profit Views</h3>
+                                        <p>This Month: 0</p>
+                                        <p>Last 7 Days: 0</p>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="orders-tab">
+                                <div class="container">
+
+                                    <div class="row">
+                                        <div class="col-md-9 col-lg-12">
+                                            <div class="profile-card">
+                                                <h2 class="text-center">User Profile</h2>
+                                                <img src="assets/images/cow5.jpg" alt="Profile Picture">
+                                                <div class="profile-name">Md Abdullah Shake</div>
+                                                <div class="profile-email">mdabdullahshake12@gmail.com</div>
+                                            </div>
                                         </div>
-                                        <div class="box">
-                                            <h3>Ongoing Workstreams</h3>
-                                            <p>Total: 0</p>
-                                            <p>Deadline: 7 Days</p>
+                                        <!-- Basic Information -->
+                                        <div class="col-md-12">
+                                            
+                                            <div class="profile-section">
+                                                <div class="section-title">Basic Information</div>
+                                                <p><strong>Name:</strong> Md Abdullah Shake</p>
+                                                <p><strong>Email:</strong> mdabdullahshake12@gmail.com</p>
+                                                <p><strong>Phone Number:</strong> 01744197982</p>
+                                                <p><strong>Account Type:</strong> Customer</p>
+                                                <p><strong>Balance:</strong> $0.00</p>
+                                                <a href="edit-password.html" class="btn btn-fill-out">Edit Customer</a>
+                                            </div>
                                         </div>
-                                        <div class="box">
-                                            <h3>Projects Applied</h3>
-                                            <p>This Month: 0</p>
-                                            <p>Last 7 Days: 0</p>
+
+                                        <!-- Profile Information -->
+                                        <div class="col-md-12">
+                                            <div class="profile-section">
+                                                <div class="section-title bg-secondary">Profile Information</div>
+                                                <p><strong>Birthdate:</strong> 1990-05-15</p>
+                                                <p><strong>Address:</strong> 123 Elm St</p>
+                                                <p><strong>Country:</strong> USA</p>
+                                                <p><strong>City:</strong> New York</p>
+                                                <p><strong>Marital Status:</strong> Single</p>
+                                                <p><strong>Company Name:</strong> TechCorp</p>
+                                                <p><strong>Note:</strong> User profile for testing</p>
+                                                <p><strong>NID:</strong> 1234567890</p>
+                                                <p><strong>Gender:</strong> Male</p>
+                                                <a href="edit-profile.html" class="btn btn-fill-out">Edit Customer
+                                                    Profile</a>
+                                            </div>
                                         </div>
-                                        <div class="box">
-                                            <h3>Profit Views</h3>
-                                            <p>This Month: 0</p>
-                                            <p>Last 7 Days: 0</p>
-                                        </div>
-                                    </section>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">

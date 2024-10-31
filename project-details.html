@@ -12,7 +12,8 @@
     <meta name="keywords"
         content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <!-- SITE TITLE --><title>Amar Firm |Firm Management</title>
+    <!-- SITE TITLE -->
+    <title>Amar Firm |Firm Management</title>
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
     <!-- Animation CSS -->
@@ -43,6 +44,83 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <style>
+        .project-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .project-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .project-title a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-title a:hover {
+            color: #007bff;
+        }
+
+        .details-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .details-row strong {
+            font-weight: 600;
+        }
+
+        .badge-custom {
+            background-color: #007bff;
+            color: white;
+            font-size: 0.9rem;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-left: 5px;
+        }
+
+        .project-info {
+            margin-top: 20px;
+        }
+
+        .icon {
+            margin-right: 8px;
+            color: #007bff;
+        }
+
+        .additional-info {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+
+        .additional-info p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .additional-info i {
+            margin-right: 10px;
+            color: #ff6347;
+        }
+
         .product-image {
             max-width: 100%;
             height: auto;
@@ -188,43 +266,60 @@
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div class="pr_detail">
-                            <div class="product_description">
-                                <h2 class="product_title"><a href="#">This is a Cow firm project</a></h2>
-                                <div class="product_price">
-                                    <span class="price">$45.00</span>
-                                    <del>$55.25</del>
-                                    <div class="on_sale">
-                                        <span>35% Off</span>
+                            <div class="project-container">
+                                <h1 class="project-title">
+                                    <a href="#">This is a Cow Farm Project</a>
+                                </h1>
+
+                                <div class="project-info">
+                                    <div class="details-row">
+                                        <span><i class="fas fa-dollar-sign icon"></i> <strong>Raise
+                                                Amount:</strong></span>
+                                        <span class="text-danger">$45.00</span>
+                                    </div>
+
+                                    <div class="details-row">
+                                        <span><i class="fas fa-bullseye icon"></i> <strong>Target
+                                                Amount:</strong></span>
+                                        <span class="text-danger">$100.00</span>
+                                    </div>
+
+                                    <div class="details-row">
+                                        <span><i class="fas fa-calendar-alt icon"></i> <strong>Start
+                                                Date:</strong></span>
+                                        <span>12/08/24</span>
+                                    </div>
+
+                                    <div class="details-row">
+                                        <span><i class="fas fa-calendar-alt icon"></i> <strong>End Date:</strong></span>
+                                        <span>30/11/24</span>
+                                    </div>
+
+                                    <div class="details-row">
+                                        <span><i class="fas fa-users icon"></i> <strong>Investors:</strong></span>
+                                        <span>2</span>
                                     </div>
                                 </div>
-                                <div class="pr_desc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa
-                                        enim. Nullam id varius nunc id varius nunc.</p>
-                                </div>
-                                <div class="product_sort_info">
-                                    <ul>
-                                        <li><i class="linearicons-shield-check"></i> 1 Year AL Jazeera Brand Warranty
-                                        </li>
-                                        <li><i class="linearicons-sync"></i> 30 Day Return Policy</li>
-                                        <li><i class="linearicons-bag-dollar"></i> Cash on Delivery available</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="cart_extra">
 
-                                <div class="cart_btn">
-                                    <button class="btn btn-fill-out btn-addtocart" type="button"> Inveset
-                                        Project</button>
-                                    <a class="add_wishlist" href="#"><i class="icon-heart"></i></a>
+                                <div class="additional-info">
+                                    <p><i class="fas fa-shield-alt"></i> 1 Year AL Jazeera Brand Warranty</p>
+                                    <p><i class="fas fa-undo"></i> 30 Day Return Policy</p>
+                                    <p><i class="fas fa-truck"></i> Cash on Delivery available</p>
                                 </div>
-                            </div>
-                            <hr />
-                            <ul class="product-meta">
-                                <li>SKU: <a href="#">BE45VGRT</a></li>
-                                <li>Category: <a href="#">Clothing</a></li>
-                            </ul>
+                                <hr />
+                                <div class="cart_extra">
 
+                                    <div class="cart_btn">
+                                        <a href="checkout.html" class="btn btn-fill-out btn-addtocart" type="button"> Inveset
+                                            Project</a>
+                                        <a class="add_wishlist" href="#"><i class="icon-heart"></i></a>
+                                    </div>
+                                </div>
+                                <hr />
+                                <ul class="product-meta">
+                                    <li>Category: <a href="#">Clothing</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
