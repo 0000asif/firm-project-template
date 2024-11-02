@@ -43,7 +43,79 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style1.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .feature-section {
+            background-color: #fdf8e6;
+            /* Light yellowish background */
+            padding: 40px 20px;
+        }
 
+        .feature-box {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 50px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .feature-description {
+            color: #7f8c8d;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .faq-section {
+            background-color: #f9fafc;
+            padding: 50px 20px;
+        }
+
+        .faq-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #6c757d;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .accordion-button {
+            color: #495057;
+            font-size: 18px;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #d4a60b;
+            background-color: #fdf8e6;
+            box-shadow: none;
+        }
+
+        .accordion-body {
+            color: #7f8c8d;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .faq-footer {
+            text-align: center;
+            font-size: 16px;
+            color: #6c757d;
+            margin-top: 20px;
+        }
+
+        .faq-footer a {
+            color: #0062cc;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -98,7 +170,7 @@
 
     <!-- START SECTION BANNER -->
     <div class="banner_section slide_medium shop_banner_slider staggered-animation-wrap">
-        <div id="carouselExampleControls" class="carousel slide carousel-fade light_arrow" data-bs-ride="carousel">
+        <div id="" class="carousel slide carousel-fade light_arrow">
             <div class="carousel-inner">
                 <div class="carousel-item active background_bg" data-img-src="assets/images/cow5.jpg">
                     <div class="banner_slide_content">
@@ -120,71 +192,7 @@
                         </div><!-- END CONTAINER-->
                     </div>
                 </div>
-                <div class="carousel-item background_bg" data-img-src="assets/images/cow4.jpg">
-                    <div class="banner_slide_content">
-                        <div class="container"><!-- STRART CONTAINER -->
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="banner_content overflow-hidden">
-                                        <h5 class="text-white mb-3 staggered-animation font-weight-light"
-                                            data-animation="slideInLeft" data-animation-delay="0.5s">Invest today profit
-                                            after 3 months</h5>
-                                        <h2 class="text-white staggered-animation" data-animation="slideInLeft"
-                                            data-animation-delay="1s">Fish Projects</h2>
-                                        <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase"
-                                            href="all-project.html" data-animation="slideInLeft"
-                                            data-animation-delay="1.5s">Show Projects</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- END CONTAINER-->
-                    </div>
-                </div>
-                <div class="carousel-item background_bg" data-img-src="assets/images/cow2.jpg">
-                    <div class="banner_slide_content">
-                        <div class="container"><!-- STRART CONTAINER -->
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="banner_content overflow-hidden">
-                                        <h5 class="text-white mb-3 staggered-animation font-weight-light"
-                                            data-animation="slideInLeft" data-animation-delay="0.5s">Invest today profit
-                                            after 3 months</h5>
-                                        <h2 class="text-white staggered-animation" data-animation="slideInLeft"
-                                            data-animation-delay="1s">Summer Sale</h2>
-                                        <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase"
-                                            href="all-project.html" data-animation="slideInLeft"
-                                            data-animation-delay="1.5s">Show Projects</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- END CONTAINER-->
-                    </div>
-                </div>
-                <div class="carousel-item background_bg" data-img-src="assets/images/cow4.jpg">
-                    <div class="banner_slide_content">
-                        <div class="container"><!-- STRART CONTAINER -->
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="banner_content overflow-hidden">
-                                        <h5 class="text-white mb-3 staggered-animation font-weight-light"
-                                            data-animation="slideInLeft" data-animation-delay="0.5s">Invest today profit
-                                            after 3 months</h5>
-                                        <h2 class="text-white staggered-animation" data-animation="slideInLeft"
-                                            data-animation-delay="1s">Summer Sale</h2>
-                                        <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase"
-                                            href="all-project.html" data-animation="slideInLeft"
-                                            data-animation-delay="1.5s">Show Projects</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- END CONTAINER-->
-                    </div>
-                </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev"><i
-                    class="ion-chevron-left"></i></a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next"><i
-                    class="ion-chevron-right"></i></a>
         </div>
     </div>
     <!-- END SECTION BANNER -->
@@ -193,7 +201,7 @@
     <div class="main_content">
 
         <!-- START SECTION CATEGORIES -->
-        <div class="section pt-0 small_pb">
+        <!-- <div class="section pt-0 small_pb">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -230,10 +238,54 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- END SECTION CATEGORIES -->
 
         <!-- START SECTION SHOP -->
+        <div class="row mb-4 mt-5">
+            <section class="feature-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature-box">
+                                <div class="feature-icon">
+                                    <img src="assets/images/cows-dairy-farm-pasture_1234738-360241.avif" alt=""
+                                        style="width: 150px;"> <!-- Replace with an actual icon -->
+                                </div>
+                                <h3 class="feature-title">Hassle-free</h3>
+                                <p class="feature-description">We take care of business assessment, legal
+                                    contracts, and repayments.
+                                    You just choose which business you want to invest in.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-box">
+                                <div class="feature-icon">
+                                    <img src="assets/images/cows-dairy-farm-pasture_1234738-360241.avif" alt=""
+                                        style="width: 150px;"> <!-- Replace with an actual icon -->
+                                </div>
+                                <h3 class="feature-title">Beats Inflation</h3>
+                                <p class="feature-description">Higher profits offered from traditional
+                                    investment options. Preserve
+                                    the value of your hard-earned money.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-box">
+                                <div class="feature-icon">
+                                    <img src="assets/images/cow5.jpg" alt="" style="width: 150px;">
+                                    <!-- Replace with an actual icon -->
+                                </div>
+                                <h3 class="feature-title">Shariah First</h3>
+                                <p class="feature-description">Halal options only. Our internationally
+                                    recognized Shariah advisors
+                                    make sure that your profits are always halal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <div class="section small_pt pb_70">
             <div class="container">
                 <div class="row justify-content-center">
@@ -741,11 +793,9 @@
 
                     <!-- Pagination and Navigation -->
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next "
-                        style="color: #000;"></div>
-                        
-                    <div class="swiper-button-prev"
-                        style="color: #000 ;"></div>
+                    <div class="swiper-button-next " style="color: #000;"></div>
+
+                    <div class="swiper-button-prev" style="color: #000 ;"></div>
                 </div>
             </div>
 
@@ -772,8 +822,70 @@
                 </div>
             </div>
         </section>
-        <!-- START HAPPY CLIENT -->
+        <!-- END HAPPY CLIENT -->
 
+        <!-- START HAPPY CLIENT -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-title">Frequently Asked Questions</div>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How do you assess the investment campaigns?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Our team of experts assesses campaigns based on various criteria such as profitability,
+                                risk
+                                factors, and potential for growth. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quas qui quibusdam ad magni beatae accusantium molestiae libero officiis autem a, atque ab nulla ea eligendi quisquam voluptate dolorem ratione!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                When can I expect returns for my investment?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Returns vary depending on the campaign's nature. Generally, you can expect returns Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, itaque natus dicta fuga dolor eos ab similique nobis beatae quam. Vero similique veniam facere autem nobis quaerat aperiam nesciunt quae.
+                                within 6-12
+                                months of investment.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Do you charge any fees?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We charge businesses a service fee of 3-5% on the amount of funding raised and usually
+                                charge
+                                investors a minimal fee from profits. This helps us to pay for our expenses to run the
+                                platform.
+                                You can rest assured that we will always ensure a transparent fee structure.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-footer">
+                    More questions? Knock us on <a href="#">WhatsApp</a> or send us an <a href="#">email</a>
+                </div>
+            </div>
+        </section>
+        <!-- END HAPPY CLIENT -->
     </div>
     <!-- END MAIN CONTENT -->
 
@@ -785,7 +897,8 @@
                     <div class="col-lg-4 col-12">
                         <div class="widget">
                             <div class="footer_logo">
-                                <a href="#"><img src="assets/images/logo_light.png" alt="logo" /></a>
+                                <a href="#"><img src="assets/images/amaar-firm.png" style="background-color: #fff;"
+                                        alt="logo" /></a>
                             </div>
                             <p>If you are going to use of Lorem Ipsum need to be sure there isn't hidden of text</p>
                         </div>

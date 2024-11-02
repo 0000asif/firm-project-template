@@ -133,10 +133,12 @@
                         </div>
                         <form method="post">
                             <div class="form-group mb-3">
-                                <input type="text" required class="form-control" name="fname" placeholder="Name *" disabled>
+                                <input type="text" required class="form-control" name="fname" placeholder="Name *"
+                                    disabled>
                             </div>
                             <div class="form-group mb-3">
-                                <input class="form-control" required type="text" name="phone" placeholder="Phone *" disabled>
+                                <input class="form-control" required type="text" name="phone" placeholder="Phone *"
+                                    disabled>
                             </div>
                             <div class="form-group mb-3">
                                 <input class="form-control" required type="text" name="email"
@@ -146,18 +148,6 @@
                             <div class="form-group mb-3">
                                 <input class="form-control" required type="number" name="amount"
                                     placeholder="Payment Amount *">
-                            </div>
-                            <div class="form-group mb-3">
-                                <div class="custom_select">
-                                    <select class="form-control">
-                                        <option value="">Select an option...</option>
-                                        <option value="ZM">Agrani bank</option>
-                                        <option value="ZW">Janata bank</option>
-                                        <option value="ZW">jamunna bank</option>
-                                        <option value="ZW">Brac bank</option>
-                                        <option value="ZW">Sonali bank</option>
-                                    </select>
-                                </div>
                             </div>
                             <div class="form-group mb-0">
                                 <textarea rows="5" class="form-control" placeholder="Order notes"></textarea>
@@ -224,83 +214,84 @@
                                     <h4>Payment</h4>
                                 </div>
                                 <div class="payment_option">
+                                    <!-- Direct Bank Transfer -->
                                     <div class="custome-radio">
-                                        <input class="form-check-input" required="" type="radio" name="payment_option"
-                                            id="exampleRadios3" value="option3" checked="">
-                                        <label class="form-check-label" for="exampleRadios3">Direct Bank
-                                            Transfer</label>
-                                        <p data-method="option3" class="payment-text">There are many variations of
-                                            passages of Lorem Ipsum available, but the majority have suffered
-                                            alteration. </p>
-
-                                        <div class="form-group mb-3 payment-text" data-method="option3">
-                                            <div class="custom_select">
-                                                <select class="form-control">
-                                                    <option value="">Select an option...</option>
-                                                    <option value="ZM">Agrani bank</option>
-                                                    <option value="ZW">Janata bank</option>
-                                                    <option value="ZW">jamunna bank</option>
-                                                    <option value="ZW">Brac bank</option>
-                                                    <option value="ZW">Sonali bank</option>
-                                                </select>
+                                        <input class="form-check-input" type="radio" name="payment_option"
+                                            id="directBank" value="option3" checked>
+                                        <label class="form-check-label" for="directBank">Direct Bank Transfer</label>
+                                        <div class="payment-details" data-method="option3">
+                                            <p>Transfer directly to our bank account. Ensure you include the transaction
+                                                ID.</p>
+                                            <p>Please contact our customer support for further assistance if needed.</p>
+                                            <div class="form-group mb-3">
+                                                <div class="custom_select">
+                                                    <select class="form-control">
+                                                        <option value="">Select Bank...</option>
+                                                        <option value="agrani">Agrani Bank</option>
+                                                        <option value="janata">Janata Bank</option>
+                                                        <option value="jamuna">Jamuna Bank</option>
+                                                        <option value="brac">BRAC Bank</option>
+                                                        <option value="sonali">Sonali Bank</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group mb-3 payment-text" data-method="option3">
-                                            <input type="text" class="form-control" name="lname"
-                                                placeholder="Transition id *">
+                                            <div class="form-group mb-3">
+                                                <input type="text" class="form-control" name="transaction_id"
+                                                    placeholder="Transaction ID *">
+                                            </div>
                                         </div>
                                     </div>
 
+                                    <!-- Check Payment -->
                                     <div class="custome-radio">
                                         <input class="form-check-input" type="radio" name="payment_option"
-                                            id="exampleRadios4" value="option4">
-                                        <label class="form-check-label" for="exampleRadios4">Check Payment</label>
-                                        <p data-method="option4" class="payment-text">Please send your cheque to
-                                            Store Name, Store Street, Store Town, Store State / County, Store
-                                            Postcode.</p>
-                                        <div class="form-group mb-3 payment-text" data-method="option4">
-                                            <div class="custom_select">
-                                                <select class="form-control">
-                                                    <option value="">Select an option...</option>
-                                                    <option value="ZM">Agrani bank</option>
-                                                    <option value="ZW">Janata bank</option>
-                                                    <option value="ZW">jamunna bank</option>
-                                                    <option value="ZW">Brac bank</option>
-                                                    <option value="ZW">Sonali bank</option>
-                                                </select>
+                                            id="checkPayment" value="option4">
+                                        <label class="form-check-label" for="checkPayment">Check Payment</label>
+                                        <div class="payment-details" data-method="option4" style="display: none;">
+                                            <p>Please send your cheque to: Store Name, Store Street, Store Town, Store
+                                                State, Store Postcode.</p>
+                                            <p>Ensure your cheque details match the provided information for smoother
+                                                processing.</p>
+                                            <div class="form-group mb-3">
+                                                <input type="text" class="form-control" name="cheque_number"
+                                                    placeholder="Cheque Number *">
                                             </div>
-                                        </div>
-                                        <div class="form-group mb-3 payment-text" data-method="option4">
-                                            <input type="text" class="form-control" name="lname"
-                                                placeholder="Transition id *">
                                         </div>
                                     </div>
 
+                                    <!-- Mobile Bank -->
                                     <div class="custome-radio">
                                         <input class="form-check-input" type="radio" name="payment_option"
-                                            id="exampleRadios5" value="option5">
-                                        <label class="form-check-label" for="exampleRadios5">Mobile Bank</label>
-                                        <p data-method="option5" class="payment-text">Pay via PayPal; you can pay
-                                            with your credit card if you don't have a PayPal account.</p>
-                                        <div class="form-group mb-3 payment-text" data-method="option5">
-                                            <div class="custom_select">
-                                                <select class="form-control">
-                                                    <option value="">Select an option...</option>
-                                                    <option value="ZM">Agrani bank</option>
-                                                    <option value="ZW">Janata bank</option>
-                                                    <option value="ZW">jamunna bank</option>
-                                                    <option value="ZW">Brac bank</option>
-                                                    <option value="ZW">Sonali bank</option>
-                                                </select>
+                                            id="mobileBank" value="option5">
+                                        <label class="form-check-label" for="mobileBank">Mobile Bank</label>
+                                        <div class="payment-details" data-method="option5" style="display: none;">
+                                            <p>Pay via your preferred mobile bank. We accept payments through popular
+                                                mobile banking providers.</p>
+                                            <p>After payment, please provide the transaction ID below for verification.
+                                            </p>
+                                            <div class="form-group mb-3">
+                                                <input type="text" class="form-control" name="mobile_transaction_id"
+                                                    placeholder="Transaction ID *">
                                             </div>
-                                        </div>
-                                        <div class="form-group mb-3 payment-text" data-method="option5">
-                                            <input type="text" class="form-control" name="lname"
-                                                placeholder="Transition id *">
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function () {
+                                    const paymentOptions = document.querySelectorAll('input[name="payment_option"]');
+
+                                    paymentOptions.forEach(option => {
+                                        option.addEventListener('change', function () {
+                                            document.querySelectorAll('.payment-details').forEach(details => {
+                                                details.style.display = details.getAttribute('data-method') === option.value ? 'block' : 'none';
+                                            });
+                                        });
+                                    });
+                                });
+                            </script>
+
                             <a href="order-completed.html" class="btn btn-fill-out btn-block">Place Order</a>
                         </div>
                     </div>
