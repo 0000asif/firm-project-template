@@ -133,24 +133,26 @@
                         </div>
                         <form method="post">
                             <div class="form-group mb-3">
-                                <input type="text" required class="form-control" name="fname" placeholder="Name *"
-                                    disabled>
+                                <input type="text" value="Md Asif Hossain" required class="form-control" name="fname"
+                                    placeholder="Name *" disabled>
                             </div>
                             <div class="form-group mb-3">
-                                <input class="form-control" required type="text" name="phone" placeholder="Phone *"
-                                    disabled>
-                            </div>
-                            <div class="form-group mb-3">
-                                <input class="form-control" required type="text" name="email"
+                                <input class="form-control" value="asif@gmail.com" required type="text" name="email"
                                     placeholder="Email address *" disabled>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input class="form-control" value="01580431245" name="phone" placeholder="Phone *"
+                                    required type="text" disabled>
                             </div>
 
                             <div class="form-group mb-3">
-                                <input class="form-control" required type="number" name="amount"
+                                <input class="form-control" value="15000" required type="number" name="amount"
                                     placeholder="Payment Amount *">
                             </div>
                             <div class="form-group mb-0">
-                                <textarea rows="5" class="form-control" placeholder="Order notes"></textarea>
+                                <textarea rows="5" class="form-control" placeholder="Invest notes">
+                                    I am interest in here This project
+                                </textarea>
                             </div>
                         </form>
                     </div>
@@ -184,6 +186,10 @@
                                         </th>
                                     </thead>
                                     <tbody>
+                                        <tr>
+                                            <td>Minimum Amount </td>
+                                            <td>$5000.00</td>
+                                        </tr>
                                         <tr>
                                             <td>Raise Amount </td>
                                             <td>$90.00</td>
@@ -270,6 +276,18 @@
                                             <p>After payment, please provide the transaction ID below for verification.
                                             </p>
                                             <div class="form-group mb-3">
+                                                <div class="custom_select">
+                                                    <select class="form-control">
+                                                        <option value="">Select one...</option>
+                                                        <option value="agrani">Bkash</option>
+                                                        <option value="janata">Nagad</option>
+                                                        <option value="jamuna">Rocket</option>
+                                                        <option value="brac">Sure Cash</option>
+                                                        <option value="sonali">Upay</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-3">
                                                 <input type="text" class="form-control" name="mobile_transaction_id"
                                                     placeholder="Transaction ID *">
                                             </div>
@@ -299,30 +317,6 @@
             </div>
             <!-- END SECTION SHOP -->
 
-            <!-- START SECTION SUBSCRIBE NEWSLETTER -->
-            <div class="section bg_default small_pt small_pb">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="heading_s1 mb-md-0 heading_light">
-                                <h3>Subscribe Our Newsletter</h3>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="newsletter_form">
-                                <form>
-                                    <input type="text" required="" class="form-control rounded-0"
-                                        placeholder="Enter Email Address">
-                                    <button type="submit" class="btn btn-dark rounded-0" name="submit"
-                                        value="Submit">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- START SECTION SUBSCRIBE NEWSLETTER -->
-
         </div>
         <!-- END MAIN CONTENT -->
 
@@ -334,7 +328,8 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="widget">
                                 <div class="footer_logo">
-                                    <a href="#"><img src="assets/images/logo_light.png" alt="logo" /></a>
+                                    <a href="#"><img src="assets/images/amaar-firm.png" style="background-color: #fff;"
+                                            alt="logo" /></a>
                                 </div>
                                 <p>If you are going to use of Lorem Ipsum need to be sure there isn't hidden of text</p>
                             </div>
