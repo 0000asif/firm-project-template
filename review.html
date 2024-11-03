@@ -4,39 +4,89 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Message Section</title>
-   <link rel="stylesheet" href="styles.css">
+   <title>Agri Input Access Section</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <style>
+      /* Custom styling */
+      .agri-section {
+         padding: 50px 15px;
+         /* Padding reduced for smaller screens */
+         background-color: #f9f9f9;
+      }
+
+      .agri-section .content h2 {
+         font-weight: 700;
+         font-size: 2.5rem;
+         color: #2c2c2c;
+      }
+
+      .agri-section .content p {
+         color: #6c757d;
+         font-size: 1.1rem;
+         line-height: 1.7;
+         max-width: 600px;
+      }
+
+      .agri-section .btn-learn-more {
+         display: inline-block;
+         margin-top: 20px;
+         color: #198754;
+         border: 2px solid #198754;
+         padding: 10px 20px;
+         font-weight: 500;
+         border-radius: 25px;
+         transition: all 0.3s ease;
+      }
+
+      .agri-section .btn-learn-more:hover {
+         color: #fff;
+         background-color: #198754;
+         text-decoration: none;
+      }
+
+      .agri-section img {
+         width: 100%;
+         border-radius: 8px;
+         object-fit: cover;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 991px) {
+         .agri-section .content h2 {
+            font-size: 2rem;
+            /* Smaller font size for smaller screens */
+         }
+
+         .agri-section .content p {
+            font-size: 1rem;
+            /* Adjusted font size for smaller screens */
+         }
+      }
+   </style>
 </head>
 
 <body>
-   <section class="message-section">
-      <h2 class="section-title">MESSAGE</h2>
-      <div class="card-container">
-         <div class="card">
-            <img src="https://via.placeholder.com/100" alt="Chairman">
-            <h3>হামিদুল ইসলাম</h3>
-            <p class="designation">Chairman</p>
-            <p class="description">সেবা পৌঁছে দেবার লক্ষ্যে ব্যাপক কার্যদি সম্পাদনে ডিজিটাল প্রযুক্তি ব্যবহার ..... </p>
-            <a href="#" class="read-more">Read More</a>
-         </div>
 
-         <div class="card">
-            <img src="https://via.placeholder.com/100" alt="Principal">
-            <h3>রফিকুল ইসলাম</h3>
-            <p class="designation">Principal</p>
-            <p class="description">সেবা পৌঁছে দেবার লক্ষ্যে ব্যাপক কার্যদি সম্পাদনে ডিজিটাল প্রযুক্তি ব্যবহার ..... </p>
-            <a href="#" class="read-more">Read More</a>
-         </div>
-
-         <div class="card">
-            <img src="https://via.placeholder.com/100" alt="Assistant Principal">
-            <h3>রশিদুল ইসলাম</h3>
-            <p class="designation">Ass Principal</p>
-            <p class="description">সেবা পৌঁছে দেবার লক্ষ্যে ব্যাপক কার্যদি সম্পাদনে ডিজিটাল প্রযুক্তি ব্যবহার ..... </p>
-            <a href="#" class="read-more">Read More</a>
+   <section class="agri-section">
+      <div class="container">
+         <div class="row mb-4">
+            <!-- Image Section -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+               <img src="assets/images/ifirm.webp" alt="Agri Input Access" class="img-fluid">
+            </div>
+            <!-- Content Section -->
+            <div class="col-lg-6 content">
+               <h2>Creating Access to Quality Input</h2>
+               <p>We empower Agri input retailers by offering a one-stop solution for all Agri input supply, offering
+                  omnichannel presence, doorstep delivery, and buy-now-pay-later solutions. This enables farmers to get
+                  access to quality input from their local Agri input shops.</p>
+               <a href="#" class="btn-learn-more">Learn More →</a>
+            </div>
          </div>
       </div>
    </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
